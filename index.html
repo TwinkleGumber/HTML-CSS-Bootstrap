@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Fav Recipe</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lobster|Londrina+Shadow|Londrina+Sketch" rel="stylesheet">
+
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
@@ -13,20 +17,20 @@
 <body>
 
 <header>
-<nav class="navbar fixed-top navbar-inverse">
+<nav class="navbar fixed-top navbar-inverse" >
 
-  <div class="container">
-    <div class="navbar-header">
+  <div class="container" >
+    <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#Smoothies" >My Favourite Recipes</a>
+      <a class="navbar-brand" href="#myCarousel" ><span class="word1">FAV</span> <span class="word2">RECIPES</span></a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar" >
       
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" >
         <li><a class="active" href="#Smoothies" style="color: #fff">Smoothies</a></li>
         <li><a href="#Tiramisu">Tiramisu</a></li>
         <li><a href="#Chocolate-Cake">Chocolate Cake</a></li>
@@ -34,22 +38,82 @@
     </div>
   </div>
 </nav>
+
 </header>
+
+<!-- carousel starts here-->
+
+<div class="container-fluid carousel_1">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+  
+      <div class="item active 1">
+     <img src="http://www.lantmannen-unibake.com/globalassets/united-kingdom-en-gb/lu-uk/sbs/inspiration/icing-sugar-dusting-1600-x-600.jpg?preset=w1200,s0" alt="carouselImage" width="460" height="345" class="mainImg">
+  <div class="carousel-caption">
+  <h1 class="testimonials"></h1>
+  
+  
+ </div>
+ </div>
+      <div class="item 2">
+        <img src="https://www.pintsandplates.com/sites/pintsandplates/files/DipListacle_Carousel_0.jpg" alt="carouselImage" width="460" height="345" class="mainImg">
+    <div class="carousel-caption">
+     </div>
+    
+     
+    </div>
+    <div class="item 3">
+        <img src="https://www.strath.ac.uk/media/1newwebsite/images-general/campusbuildings/rosspriory/1600-x-600-Ross-Priory-Conference-Dinner5.jpg" alt="carouselImage" width="460" height="345" class="mainImg">
+    <div class="carousel-caption">
+  
+      </div>
+    
+     
+    </div>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+<!-- carousel ends here-->
+
+
+<div style="margin: 0 auto;"></div>
 
 <div class="container" >
 
-<!--Smootie row-->
-  <div class="row" id="Smoothies" style="margin-top: 48px;">
+<!--Smoothie row-->
+  <div class="row" id="Smoothies" style="margin-top: 20px;">
     <div class="col-lg-12">
       <h1 class="heading">Smoothies</h1>
     </div>
   </div> 
    
-  <div class="row" >
-    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12 top-content" style="padding-top: 20px;">
+  <div class="row top-content"  >
+    <div class="col-lg-5 col-md-12 col-sm-12 col-xm-12 top-content"  >
         <img src="https://cdn.jamieoliver.com/recipe-database/oldImages/430_575/1104_1_1436891354.jpg" alt="smoothie image" height=430   class="smoothie-img">
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12 top-content" style="padding-top: 20px;">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5 col-md-12 col-sm-12 col-xm-12 top-content " style="margin-top:7px;margin-bottom: 7px;">
         <p > 4 Quick and delicious smoothie recipes that my kids love! I am going to share the recipe for the green smoothie below, for the other smoothie recipes please click <a href="https://www.jamieoliver.com/recipes/fruit-recipes/super-smoothies/" target="_blank"> here</a></p> 
         <h3 class="h3"> Ingredients</h3>
         <ul> 
@@ -59,7 +123,9 @@
             <li> 1 lime </li>
         </ul>
     </div>
-    <div class="col-lg-12 " ><h3 class="h3"> Method</h3>
+    <div class="col-lg-1"></div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 method-box" ><h3 class="h3"> Method</h3>
        <ol>
           <li>  Peel the banana and cut into nice big slices on a chopping board – ideally you want to use frozen bananas, so try to remember to do this the day before. </li>
           <li> Put the banana and spinach in a blender and pour in the apple juice.</li>
@@ -68,33 +134,39 @@
       </ol>
     </div>
   </div>
-    
 
-  
 
- <div class="row" id="Tiramisu">
+<!--Tiramisu row-->
+  <div class="row" id="Tiramisu" ">
     <div class="col-lg-12">
       <h1 class="heading">Tiramisu</h1>
     </div>
- </div>
-    
- <div class="row top-content">
-    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12  "><img src="https://i2.wp.com/kitchenjoyblog.com/kitchenjoyblogcom/wp-content/uploads/2014/10/authentic-Italian-Tiramisu-recipe-302.jpg" alt="tiramisu image" width=350 ></div>
-    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12 " ><p> An easy and super delicious recipe for Tiramisu. Don't be scared of the raw eggs,they won't make you sick! The marsala can be replaced with dark rum, or even be left out completely, it is still delicious without the alcohol.</p>
-      <h3 class="h3"> Ingredients</h3>
-      <ul>
-        <li> 6 egg yolks, at room temperature</li>
-        <li> 4 egg whites</li>
-        <li> 1/2 cup granulated sugar</li>
-        <li> 2 cups (16-ounces) mascarpone</li>
-        <li> 36-48 Savoiardi ladyfingers</li>
-        <li> 1 1/2 cups Italian coffee made in Moka pot, cooled</li>
-        <li> 2 tablespoons Marsala</li>
-        <li> 1/4 cup cocoa powder</li>
-        <li> 2 ounces dark or semi-sweet chocolate, shaved</li>
-    </ul></div>
-    <div class="col-lg-12 " ><h3 class="h3"> Method</h3>
-    <ol>
+  </div> 
+   
+  <div class="row top-content"  >
+    <div class="col-lg-5 col-md-12 col-sm-12 col-xm-12 top-content"  >
+        <img src="https://i2.wp.com/kitchenjoyblog.com/kitchenjoyblogcom/wp-content/uploads/2014/10/authentic-Italian-Tiramisu-recipe-302.jpg" alt="tiramisu image" width=350 >
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5 col-md-12 col-sm-12 col-xm-12 top-content " style="margin-top:7px;margin-bottom: 7px;">
+        <p > 4 Quick and delicious smoothie recipes that my kids love! I am going to share the recipe for the green smoothie below, for the other smoothie recipes please click <a href="https://www.jamieoliver.com/recipes/fruit-recipes/super-smoothies/" target="_blank"> here</a></p> 
+        <h3 class="h3"> Ingredients</h3>
+        <ul>
+            <li> 6 egg yolks, at room temperature</li>
+            <li> 4 egg whites</li>
+            <li> 1/2 cup granulated sugar</li>
+            <li> 2 cups (16-ounces) mascarpone</li>
+            <li> 36-48 Savoiardi ladyfingers</li>
+            <li> 1 1/2 cups Italian coffee made in Moka pot, cooled</li>
+            <li> 2 tablespoons Marsala</li>
+            <li> 1/4 cup cocoa powder</li>
+            <li> 2 ounces dark or semi-sweet chocolate, shaved</li>
+        </ul>
+    </div>
+    <div class="col-lg-1"></div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 method-box" ><h3 class="h3"> Method</h3>
+       <ol>
       <li>Brew coffee and allow to cool to room temperature.</li>
       <li>In a large bowl, whisk egg yolks and 1/4 cup of sugar until pale, doubled in volume, and "ribbons" remain for a few seconds when spoon is lifted from the mixture, about 3-4 minutes.</li>
       <li>Whisk in marscarpone a little bit at a time.</li>
@@ -106,20 +178,25 @@
       <li>Top with another layer of dipped ladyfingers. Spread remaining mascarpone mixture evenly on top of ladyfingers.</li>
       <li>Refrigerate at least 8 hours before serving. (Overnight works well too.) This allows the filling to set and the ladyfingers to soften and absorb the coffee.</li>
       <li>Sprinkle with cocoa powder and chocolate shavings immediately before serving. </li>
-    </ol></div>
-   </div>
+    </ol>
+    </div>
+  </div>
 
-   <div class="row" id="Chocolate-Cake" ">
+
+
+<!--choco row-->
+  <div class="row" id="Chocolate-Cake" >
     <div class="col-lg-12">
       <h1 class="heading">Chocolate Cake</h1>
     </div>
   </div> 
    
-  <div class="row " >
-    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12 top-content" >
+  <div class="row top-content"  >
+    <div class="col-lg-5 col-md-12 col-sm-12 col-xm-12 top-content"  >
         <img src="https://cdn.jamieoliver.com/news-and-features/features/wp-content/uploads/sites/2/2016/07/chocolatecake_featured.jpg" alt="chocolate cake image" class="choco-img">
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12 top-content" >
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5 col-md-12 col-sm-12 col-xm-12 top-content " style="margin-top:7px;margin-bottom: 7px;">
         <p> A classic chocolate cake with chocolate buttercream, <strong> The cake </strong> my kids want as their birthday cake!</p> 
         <h3 class="h3"> Ingredients</h3>
         <ul>
@@ -139,7 +216,9 @@
         <li>100g fresh berries</li>
        </ul>
     </div>
-    <div class="col-lg-12 " ><h3 class="h3"> Method</h3>
+    <div class="col-lg-1"></div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 method-box" ><h3 class="h3"> Method</h3>
        <ol>
           <li> Preheat your oven to 180ºC/350F/gas 4. Grease 2 x 9” sandwich tins and line the bases. </li>
           <li>In a bowl, mix together the flour, 75g of the cocoa, the baking pow</li>
@@ -155,8 +234,11 @@
        </ol>
     </div>
   </div>
-    
- 
+
+
+
+
+
 
 
 
@@ -164,5 +246,15 @@
 <footer  >
       <p > I hope you try them out and enjoy them as much as my family does! </p>
     </footer>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.carousel').carousel({
+        interval: 2800
+    });
+
+    $('.carousel').carousel('cycle');
+});
+</script>  
 </body>
 </html>

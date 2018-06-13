@@ -1,39 +1,112 @@
 body, html {
     font-family: sans-serif;
+    color: #fff;
     font-size: 18px;
-
+   /*background-image: url("http://www.foodwise.com.au/wp-content/themes/foodwise/images/bg-6.jpg");
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl2TNTN8MD7RQ1I8Urg7X2QbO5g4jEm-izRwP79Vzng5ub5J9V");
+   
+   background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    
+    background-repeat: no-repeat;*/
 }
-header{
-	
+
+.container{
+
 }
 .navbar{
 	position: fixed;
 	width: 100%;
 	z-index: 99 !important;
-}
-.navbar-brand{
-	color: #fff !important;
-	font-size: 25px;
-	margin-left: 29px;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-radius: 0px;
 
+}
+.collapse-in{
+  border: 4px solid red !important;
+}
+.navbar-brand:before,
+.navbar-brand:after{
+	
+  position: absolute;
+  
+  border-style: solid;
+  border-color: transparent;
+  height: 0;
+}
+ .word1 {
+font-weight: 600;
+color: #dc006c;
+  margin-right: -14px;
+  transform: rotateY(180deg);
+  display: inline-block;
+  z-index: 10;
+ }
+  span {
+  position: relative;
+}
+ .word2 {
+  z-index: 0;
+}
+ 
+.navbar-brand{
+	color: white !important;
+	font-size: 30px;
+	margin-left: 29px;
+	font-weight: 500;
+    font:  'Arial Narrow', sans-serif;
   }
 a {
-   
+    
     font-size: 16px ;
     margin-right: 4px;
 }
+.mainImg{
+width: 100%;
+height: 150%;
+background-size: cover;
 
+}
+.carousel-inner:hover .mainImg{
+
+
+}
+.slide{
+ 
+    margin-top: 35px;
+}
   .heading{
-  	font-weight: bold;
-  	text-align: center;
+  	 text-decoration: underline;
+  	font-weight: 800;
+    font-size: 50px;
+  	color: #7219FF;
+    text-align: center;
+    margin-left:-11px;
+    margin-top: 25px;
+   font: bold italic 2em/1em "Times New Roman", "MS Serif", "New York", serif;
+
+/*
+
+text-align: center !important;
+width: 150px;
+border-top: solid  #7219FF medium;
+border-bottom: dotted  #7219FF ;*/
+  	
   }
+  
   
   img{
     border: 2px solid black;
     width: 100%
   }
-  .smoothie-img{
-  	width: 80%;
+  div.smoothie-img{
+  	width: 90%;
+  	/*margin-left: 30px;*/
+  	position: center;
+  	background-position: center;
   }
   .choco-img{
   	width: 100%;
@@ -52,13 +125,31 @@ a {
   
   .h3{
   	font-weight: 300px !important;
-    font-weight: bold !important;
-
+    color: #dc006c;
+    
   }
   footer{
   	margin-top: 30px;
+    color: black;
   	font-weight: 500 !important;
   	font-size: 40px;
   	text-align: center;
   	padding: 0px 20px 0px 20px !important;
+  	background-color: rgb(255,255,120);
+  }
+
+  .col-lg-5{
+  	opacity: 0.8;
+  	padding-top: 20px;
+  	padding-bottom:20px;
+  	background-color: #000;
+  	border-radius: 10px;
+  }
+  .method-box{
+  	background-color: #000;
+  	border-radius: 10px;
+    opacity: 0.8;
+    width: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
